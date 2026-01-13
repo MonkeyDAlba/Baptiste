@@ -18,16 +18,31 @@
 
     header {
       text-align: center;
-      padding: 60px 20px;
+      padding: 70px 20px;
+      background: linear-gradient(135deg, #020617, #1e293b);
     }
 
-    h1 { font-size: 2.5em; }
-    h2 { text-align: center; margin: 40px 0 20px; }
+    h1 {
+      font-size: 2.7em;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 60px 0 30px;
+      font-size: 2em;
+    }
+
+    p {
+      font-size: 1em;
+      line-height: 1.6;
+    }
 
     .swiper {
       width: 90%;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
+      padding-bottom: 50px;
     }
 
     .swiper-slide {
@@ -39,10 +54,21 @@
 
     .swiper-slide img {
       width: 100%;
-      max-height: 200px;
+      max-height: 220px;
       object-fit: cover;
       border-radius: 15px;
       margin-bottom: 20px;
+    }
+
+    .projets .swiper-slide {
+      background: #020617;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      font-size: 0.9em;
+      color: #94a3b8;
     }
   </style>
 </head>
@@ -54,21 +80,22 @@
   <p>Étudiant en BUT Mesures Physiques – 1ʳᵉ année</p>
 </header>
 
+<!-- ================= COMPÉTENCES ================= -->
 <h2>🔬 Compétences & domaines d’étude</h2>
 
-<div class="swiper">
+<div class="swiper competences">
   <div class="swiper-wrapper">
 
     <div class="swiper-slide">
       <img src="https://images.unsplash.com/photo-1581091870627-3a1c1a1f79c1">
-      <h3>Physique & Mesures</h3>
+      <h3>Physique & mesures</h3>
       <p>Métrologie, mécanique, thermodynamique, optique, électricité.</p>
     </div>
 
     <div class="swiper-slide">
       <img src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b">
       <h3>Instrumentation</h3>
-      <p>Capteurs, chaînes de mesure, acquisition de données.</p>
+      <p>Capteurs, chaînes de mesure, acquisition de données, électronique de base.</p>
     </div>
 
     <div class="swiper-slide">
@@ -80,22 +107,83 @@
     <div class="swiper-slide">
       <img src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72">
       <h3>Méthodologie scientifique</h3>
-      <p>Protocoles, rigueur expérimentale, comptes rendus.</p>
+      <p>Protocoles expérimentaux, rigueur, comptes rendus, travail en équipe.</p>
     </div>
 
   </div>
 
-  <!-- Pagination -->
   <div class="swiper-pagination"></div>
 </div>
+
+<!-- ================= PROJETS ================= -->
+<h2>🧪 Projets & Travaux pratiques</h2>
+
+<div class="swiper projets">
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide">
+      <img src="https://images.unsplash.com/photo-1581091012184-5c5d6c4e1c5f">
+      <h3>Projet d’équipe – Chimie nucléaire</h3>
+      <p>
+        Analyse et comparaison des méthodes de dosage appliquées aux paramètres
+        chimiques des circuits d’une centrale nucléaire.
+        Travail d’équipe, rigueur expérimentale et interprétation des résultats.
+      </p>
+    </div>
+
+    <div class="swiper-slide">
+      <img src="https://images.unsplash.com/photo-1509223197845-458d87318791">
+      <h3>TP de thermodynamique</h3>
+      <p>
+        Vérification expérimentale de la loi des gaz parfaits à partir des lois de
+        Boyle, Charles et Gay-Lussac grâce à des mesures de pression, volume et température.
+      </p>
+    </div>
+
+    <div class="swiper-slide">
+      <img src="https://images.unsplash.com/photo-1581091870627-3a1c1a1f79c1">
+      <h3>TP d’électricité</h3>
+      <p>
+        Utilisation d’un GBF, d’un oscilloscope et d’appareils de mesure de base
+        (multimètre) pour l’analyse de signaux électriques.
+      </p>
+    </div>
+
+    <div class="swiper-slide">
+      <img src="https://images.unsplash.com/photo-1618220179428-22790b461013">
+      <h3>TP de matériaux – MEB</h3>
+      <p>
+        Observation de matériaux au microscope électronique à balayage (MEB) afin
+        d’analyser leur microstructure et interpréter les images obtenues.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="swiper-pagination"></div>
+</div>
+
+<footer>
+  Portfolio académique – BUT Mesures Physiques  
+  <br>
+  Mis à jour progressivement au fil de la formation
+</footer>
 
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
-  new Swiper('.swiper', {
+  new Swiper('.competences', {
     loop: true,
     pagination: {
-      el: '.swiper-pagination',
+      el: '.competences .swiper-pagination',
+      clickable: true,
+    },
+  });
+
+  new Swiper('.projets', {
+    loop: true,
+    pagination: {
+      el: '.projets .swiper-pagination',
       clickable: true,
     },
   });
