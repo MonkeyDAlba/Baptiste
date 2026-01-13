@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
 
   <style>
     body {
@@ -87,25 +90,25 @@
   <div class="swiper-wrapper">
 
     <div class="swiper-slide">
-      <img src="https://prepas.org/images/img/jpg/article74-image51.jpg">
+      <img loading="lazy" src="https://prepas.org/images/img/jpg/article74-image51.jpg">
       <h3>Physique & mesures</h3>
       <p>Métrologie, mécanique, thermodynamique, optique, électricité.</p>
     </div>
 
     <div class="swiper-slide">
-      <img src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b">
+      <img loading="lazy" src="https://blog.izi-by-edf.fr/2021/06/multimetre.jpg">
       <h3>Instrumentation</h3>
       <p>Capteurs, chaînes de mesure, acquisition de données, électronique de base.</p>
     </div>
 
     <div class="swiper-slide">
-      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+      <img loading="lazy" src="https://images.unsplash.com/photo-1518770660439-4636190af475">
       <h3>Traitement des données</h3>
       <p>Analyse des incertitudes, graphiques, Excel, Python.</p>
     </div>
 
     <div class="swiper-slide">
-      <img src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72">
+      <img loading="lazy" src="https://www.onisep.fr/var/onisep/storage/images/2/9/8/4/9564892-7-fre-FR/6a26ce09de11-technicien-ne-en-metrologie.jpg">
       <h3>Méthodologie scientifique</h3>
       <p>Protocoles expérimentaux, rigueur, comptes rendus, travail en équipe.</p>
     </div>
@@ -122,39 +125,38 @@
   <div class="swiper-wrapper">
 
     <div class="swiper-slide">
-      <img src="https://images.unsplash.com/photo-1581091012184-5c5d6c4e1c5f">
+      <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk1gMLRmJQ7c1KHGDikqRF6U5WGOnufoi30A&s">
       <h3>Projet d’équipe – Chimie nucléaire</h3>
       <p>
         Analyse et comparaison des méthodes de dosage appliquées aux paramètres
         chimiques des circuits d’une centrale nucléaire.
-        Travail d’équipe, rigueur expérimentale et interprétation des résultats.
       </p>
     </div>
 
     <div class="swiper-slide">
-      <img src="https://images.unsplash.com/photo-1509223197845-458d87318791">
+      <img loading="lazy" src="https://www.pichegru.net/assets/img-cours/fluide_pression_hydrostatique02.png">
       <h3>TP de thermodynamique</h3>
       <p>
-        Vérification expérimentale de la loi des gaz parfaits à partir des lois de
-        Boyle, Charles et Gay-Lussac grâce à des mesures de pression, volume et température.
+        Vérification expérimentale de la loi des gaz parfaits
+        (Boyle, Charles, Gay-Lussac).
       </p>
     </div>
 
     <div class="swiper-slide">
-      <img src="https://images.unsplash.com/photo-1581091870627-3a1c1a1f79c1">
+      <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV4H-TZBLQKqk_y4E7PUb_geXOyndkNCFHsw&s">
       <h3>TP d’électricité</h3>
       <p>
-        Utilisation d’un GBF, d’un oscilloscope et d’appareils de mesure de base
-        (multimètre) pour l’analyse de signaux électriques.
+        Utilisation d’un GBF, oscilloscope et multimètre
+        pour l’analyse de signaux électriques.
       </p>
     </div>
 
     <div class="swiper-slide">
-      <img src="https://images.unsplash.com/photo-1618220179428-22790b461013">
+      <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReO0iNiLwTTx3dSQGoId011wQasWDYYlrrCQ&s">
       <h3>TP de matériaux – MEB</h3>
       <p>
-        Observation de matériaux au microscope électronique à balayage (MEB) afin
-        d’analyser leur microstructure et interpréter les images obtenues.
+        Observation de matériaux au microscope électronique à balayage (MEB)
+        et analyse de leur microstructure.
       </p>
     </div>
 
@@ -164,8 +166,7 @@
 </div>
 
 <footer>
-  Portfolio académique – BUT Mesures Physiques  
-  <br>
+  Portfolio académique – BUT Mesures Physiques<br>
   Mis à jour progressivement au fil de la formation
 </footer>
 
@@ -173,6 +174,8 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
   new Swiper('.competences', {
+    slidesPerView: 1,
+    spaceBetween: 30,
     loop: true,
     pagination: {
       el: '.competences .swiper-pagination',
@@ -181,6 +184,8 @@
   });
 
   new Swiper('.projets', {
+    slidesPerView: 1,
+    spaceBetween: 30,
     loop: true,
     pagination: {
       el: '.projets .swiper-pagination',
@@ -191,3 +196,4 @@
 
 </body>
 </html>
+
