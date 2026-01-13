@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Baptiste – Portfolio Mesures Physiques</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #0f172a;
+      color: white;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    h1 { font-size: 2.5em; }
+    h2 { text-align: center; margin: 40px 0 20px; }
+
+    .swiper {
+      width: 90%;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .swiper-slide {
+      background: #1e293b;
+      border-radius: 20px;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Baptiste</h1>
+  <p>Étudiant en BUT Mesures Physiques – 1ʳᵉ année</p>
+</header>
+
+<h2>🔬 Compétences & domaines d’étude</h2>
+
+<div class="swiper">
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide">
+      <img src="https://images.unsplash.com/photo-1581091870627-3a1c1a1f79c1">
+      <h3>Physique & Mesures</h3>
+      <p>Métrologie, mécanique, thermodynamique, optique, électricité.</p>
+    </div>
+
+    <div class="swiper-slide">
+      <img src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b">
+      <h3>Instrumentation</h3>
+      <p>Capteurs, chaînes de mesure, acquisition de données.</p>
+    </div>
+
+    <div class="swiper-slide">
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+      <h3>Traitement des données</h3>
+      <p>Analyse des incertitudes, graphiques, Excel, Python.</p>
+    </div>
+
+    <div class="swiper-slide">
+      <img src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72">
+      <h3>Méthodologie scientifique</h3>
+      <p>Protocoles, rigueur expérimentale, comptes rendus.</p>
+    </div>
+
+  </div>
+
+  <!-- Pagination -->
+  <div class="swiper-pagination"></div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  new Swiper('.swiper', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>
+
+</body>
+</html>
