@@ -5,7 +5,7 @@
   <title>Baptiste – Portfolio Mesures Physiques</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Swiper CSS -->
+  <!-- Swiper CSS (OBLIGATOIRE) -->
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -36,16 +36,15 @@
       font-size: 2em;
     }
 
-    p {
-      font-size: 1em;
-      line-height: 1.6;
-    }
-
     .swiper {
       width: 90%;
       max-width: 1000px;
       margin: auto;
-      padding-bottom: 50px;
+      padding-bottom: 60px;
+    }
+
+    .swiper-wrapper {
+      display: flex;
     }
 
     .swiper-slide {
@@ -53,6 +52,7 @@
       border-radius: 20px;
       padding: 30px;
       text-align: center;
+      box-sizing: border-box;
     }
 
     .swiper-slide img {
@@ -61,6 +61,7 @@
       object-fit: cover;
       border-radius: 15px;
       margin-bottom: 20px;
+      pointer-events: none;
     }
 
     .projets .swiper-slide {
@@ -83,49 +84,48 @@
   <p>Étudiant en BUT Mesures Physiques – 1ʳᵉ année</p>
 </header>
 
-<!-- ================= COMPÉTENCES ================= -->
+<!-- ===== COMPÉTENCES ===== -->
 <h2>🔬 Compétences & domaines d’étude</h2>
 
 <div class="swiper competences">
   <div class="swiper-wrapper">
 
     <div class="swiper-slide">
-      <img loading="lazy" src="https://prepas.org/images/img/jpg/article74-image51.jpg">
+      <img src="https://prepas.org/images/img/jpg/article74-image51.jpg" loading="lazy">
       <h3>Physique & mesures</h3>
       <p>Métrologie, mécanique, thermodynamique, optique, électricité.</p>
     </div>
 
     <div class="swiper-slide">
-      <img loading="lazy" src="https://blog.izi-by-edf.fr/2021/06/multimetre.jpg">
+      <img src="https://blog.izi-by-edf.fr/2021/06/multimetre.jpg" loading="lazy">
       <h3>Instrumentation</h3>
-      <p>Capteurs, chaînes de mesure, acquisition de données, électronique de base.</p>
+      <p>Capteurs, chaînes de mesure, acquisition de données.</p>
     </div>
 
     <div class="swiper-slide">
-      <img loading="lazy" src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" loading="lazy">
       <h3>Traitement des données</h3>
       <p>Analyse des incertitudes, graphiques, Excel, Python.</p>
     </div>
 
     <div class="swiper-slide">
-      <img loading="lazy" src="https://www.onisep.fr/var/onisep/storage/images/2/9/8/4/9564892-7-fre-FR/6a26ce09de11-technicien-ne-en-metrologie.jpg">
+      <img src="https://www.onisep.fr/var/onisep/storage/images/2/9/8/4/9564892-7-fre-FR/6a26ce09de11-technicien-ne-en-metrologie.jpg" loading="lazy">
       <h3>Méthodologie scientifique</h3>
-      <p>Protocoles expérimentaux, rigueur, comptes rendus, travail en équipe.</p>
+      <p>Protocoles, rigueur, comptes rendus, travail en équipe.</p>
     </div>
 
   </div>
-
   <div class="swiper-pagination"></div>
 </div>
 
-<!-- ================= PROJETS ================= -->
+<!-- ===== PROJETS ===== -->
 <h2>🧪 Projets & Travaux pratiques</h2>
 
 <div class="swiper projets">
   <div class="swiper-wrapper">
 
     <div class="swiper-slide">
-      <img loading="lazy" src="https://www.chimieparistech.psl.eu/wp-content/uploads/2017/12/banner-formations.jpg">
+      <img src="https://www.chimieparistech.psl.eu/wp-content/uploads/2017/12/banner-formations.jpg" loading="lazy">
       <h3>Projet d’équipe – Chimie nucléaire</h3>
       <p>
         Analyse et comparaison des méthodes de dosage appliquées aux paramètres
@@ -134,34 +134,24 @@
     </div>
 
     <div class="swiper-slide">
-      <img loading="lazy" src="https://i0.wp.com/cahierthermo.wordpress.com/wp-content/uploads/2017/05/19369299_1533536286699288_1694595182_o.jpg?fit=1200%2C900&ssl=1">
+      <img src="https://i0.wp.com/cahierthermo.wordpress.com/wp-content/uploads/2017/05/19369299_1533536286699288_1694595182_o.jpg?fit=1200%2C900&ssl=1" loading="lazy">
       <h3>TP de thermodynamique</h3>
-      <p>
-        Vérification expérimentale de la loi des gaz parfaits
-        (Boyle, Charles, Gay-Lussac).
-      </p>
+      <p>Vérification expérimentale des lois de Boyle, Charles et Gay-Lussac.</p>
     </div>
 
     <div class="swiper-slide">
-      <img loading="lazy" src="https://cdn.xingosoftware.com/elektor/images/fetch/dpr_1/https%3A%2F%2Fwww.elektormagazine.fr%2Fassets%2Fupload%2Fimages%2F14%2F20240109164935_FNISRSI-1014D.jpg">
+      <img src="https://cdn.xingosoftware.com/elektor/images/fetch/dpr_1/https%3A%2F%2Fwww.elektormagazine.fr%2Fassets%2Fupload%2Fimages%2F14%2F20240109164935_FNISRSI-1014D.jpg" loading="lazy">
       <h3>TP d’électricité</h3>
-      <p>
-        Utilisation d’un GBF, oscilloscope et multimètre
-        pour l’analyse de signaux électriques.
-      </p>
+      <p>Utilisation d’un GBF, oscilloscope et multimètre.</p>
     </div>
 
     <div class="swiper-slide">
-      <img loading="lazy" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReO0iNiLwTTx3dSQGoId011wQasWDYYlrrCQ&s">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReO0iNiLwTTx3dSQGoId011wQasWDYYlrrCQ&s" loading="lazy">
       <h3>TP de matériaux – MEB</h3>
-      <p>
-        Observation de matériaux au microscope électronique à balayage (MEB)
-        et analyse de leur microstructure.
-      </p>
+      <p>Observation de matériaux au microscope électronique à balayage.</p>
     </div>
 
   </div>
-
   <div class="swiper-pagination"></div>
 </div>
 
@@ -170,13 +160,14 @@
   Mis à jour progressivement au fil de la formation
 </footer>
 
-<!-- Swiper JS -->
+<!-- Swiper JS (OBLIGATOIRE) -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
   new Swiper('.competences', {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
+    grabCursor: true,
     pagination: {
       el: '.competences .swiper-pagination',
       clickable: true,
@@ -187,6 +178,7 @@
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
+    grabCursor: true,
     pagination: {
       el: '.projets .swiper-pagination',
       clickable: true,
@@ -196,4 +188,3 @@
 
 </body>
 </html>
-
